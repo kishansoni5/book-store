@@ -14,8 +14,44 @@ A responsive e-commerce platform designed for buying and selling books online. U
 
 ## Installation
 
+## Installation
+
 To get your project up and running locally, follow these steps:
 
+### Option 1: Download the ZIP File (No Git Required)
+1. **Download the project**:
+   - Go to the repository page on GitHub.
+   - Click on the **"Code"** button (green button) and then click **"Download ZIP"**.
+
+2. **Extract the ZIP file**:
+   - Extract the downloaded ZIP file to a folder on your local machine.
+
+3. **Set up WAMP or XAMPP**:
+   - Download and install **[WAMP](https://www.wampserver.com/en/)** or **[XAMPP](https://www.apachefriends.org/index.html)** (depending on your preference).
+   - Start **Apache** and **MySQL** services in WAMP or XAMPP.
+
+4. **Move your project to the appropriate folder**:
+   - For **WAMP**, move your project folder to `C:\wamp64\www\` (or the path where your WAMP server is installed).
+   - For **XAMPP**, move your project folder to `C:\xampp\htdocs\` (or the path where your XAMPP server is installed).
+
+5. **Create the database**:
+   - Open **phpMyAdmin** in your browser: `http://localhost/phpmyadmin/`
+   - Create a new database for your project (e.g., `book_bank`).
+   - Import the provided `.sql` file (if you have one for your database schema) into the new database.
+
+6. **Update database configuration**:
+   - Open the `config.php` or equivalent file in your project.
+   - Update the database connection settings with the appropriate username, password, and database name.
+
+7. **Run the project**:
+   - Open your browser and navigate to:
+     - `http://localhost/book-bank/` (replace `book-bank` with the actual folder name if different).
+   - The project should now be running locally on your machine.
+
+### Option 2: Clone the Repository with Git (If Git is Installed)
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/book-bank.git
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/book-bank.git
